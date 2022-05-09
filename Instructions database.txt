@@ -1,0 +1,4 @@
+# Il faudra importer la base de données 'CESI-CUBE' via PHPmyadmin our excute les requêtes directement depuis la console.
+# De préférence créer un mot de passe 'CESI-2022' et un nom d'utilisateur 'TEAM'.
+# Accorder les prévilages nécessaires pour mieux concevoir l'API.
+# Nom à attribuer à la base de données 'database_meteo'

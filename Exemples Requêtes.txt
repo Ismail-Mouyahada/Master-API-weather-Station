@@ -1,0 +1,49 @@
+
+# NodeJs
+
+var request = require('request');
+var options = {
+  'method': 'GET',
+  'url': 'http://127.0.0.1:5000/api/v1/donnees/',
+  'headers': {
+  }
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+
+# Javascript
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "http://127.0.0.1:5000/api/v1/donnees/");
+
+xhr.send();
+
+# PHP
+
+var data = "";
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "http://127.0.0.1:5000/api/v1/donnees/");
+
+xhr.send(data);
+
+
+?>
